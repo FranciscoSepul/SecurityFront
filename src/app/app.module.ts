@@ -20,6 +20,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { NotificacionesComponent } from './notificaciones/notificaciones.component';
+import { AccidentesComponent } from './accidentes/accidentes.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { EmpresasComponent } from './empresas/empresas.component';
+import { PlanificacionComponent } from './planificacion/planificacion.component';
+import { UsuarioComponent } from './usuario/usuario.component';
+import { VisitasComponent } from './visitas/visitas.component';
 
 
 
@@ -31,7 +38,14 @@ import { MatMenuModule } from '@angular/material/menu';
         LoginComponent,
         ActividadesComponent,
         NavigationComponent,
-        DashboardComponent
+        DashboardComponent,
+        NotificacionesComponent,
+        AccidentesComponent,
+        UsuariosComponent,
+        EmpresasComponent,
+        PlanificacionComponent,
+        UsuarioComponent,
+        VisitasComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
