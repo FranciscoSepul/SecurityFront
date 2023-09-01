@@ -8,10 +8,15 @@
 .sidenav {
   width: 103.061px;
 }
-
-.sidenav .mat-toolbar {
-  background: #013240;
+::ng-deep .mat-drawer-inner-container {
+  border-right: none !important;
 }
+.sidenav .mat-toolbar {
+  background: #01242A;
+  height: 60px;
+  border-right: none !important;
+}
+
 .leftNav {
   min-width: 900px !important;
   height: 1000px !important;
@@ -25,9 +30,12 @@
   z-index: 1;
 }
 .Topnav{
-  background: #013240;
+  background: #01242A;
+  border-right: none !important;
 }
-
+.sidenav{
+  border-right: 1px solid #01242A !important;
+}
 
 .toggle {
   width: 100%;
