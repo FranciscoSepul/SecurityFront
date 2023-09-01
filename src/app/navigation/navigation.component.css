@@ -32,6 +32,7 @@
 .Topnav{
   background: #01242A;
   border-right: none !important;
+  padding: 0 485px !important;
 }
 .sidenav{
   border-right: 1px solid #01242A !important;
@@ -59,10 +60,14 @@
     transition-property: transform, border, background-color;
   }
 
-
+.HeaderName{
+  position: relative !important;
+  padding: 0 560px !important;
+}
   mat-icon {
     color: #1976d2;
   }
+
 }
 
 

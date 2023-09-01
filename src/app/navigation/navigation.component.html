@@ -22,7 +22,7 @@
       <a mat-list-item href="Accidentes"><img src="../../../assets/Icon/person-falling-burst-solid.svg"  width="60" height="50"/></a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content class="derecha">
     <mat-toolbar class="Topnav">
       <button
         type="button"
@@ -32,7 +32,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Bienvenido</span>
+      <span class="derecha">Bienvenido</span>
     </mat-toolbar>
     <app-dashboard class="leftNav"></app-dashboard>
   </mat-sidenav-content>
