@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'SecurityFront';
+  isSideBarOpen = true;
+  openSideBar() {
+    this.isSideBarOpen = true;
+  }
+  closeSideBar() {
+    this.isSideBarOpen = false;
+  }
+
 }

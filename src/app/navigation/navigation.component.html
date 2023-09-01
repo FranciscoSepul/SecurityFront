@@ -1,0 +1,39 @@
+
+<mat-sidenav-container class="sidenav-container ">
+  <mat-sidenav #drawer class="sidenav " fixedInViewport="true"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="!(isHandset$ | async)">
+    <mat-toolbar class="TopNav"></mat-toolbar>
+    <mat-nav-list class="leftNav">
+      <p>&nbsp;</p>
+      <a mat-list-item href="Actividades"><img src="../../../assets/Icon/helmet-safety-solid.svg"  width="50" height="50"/></a>
+      <p>&nbsp;</p>
+      <a mat-list-item href="Actividades"><img src="../../../assets/Icon/users-solid.svg"  width="50" height="50"/></a>
+      <p>&nbsp;</p>
+      <a mat-list-item href="Actividades"><img src="../../../assets/Icon/business-time-solid.svg"  width="50" height="50"/></a>
+      <p>&nbsp;</p>
+      <a mat-list-item href="Actividades"><img src="../../../assets/Icon/building-solid.svg"  width="50" height="50"/></a>
+      <p>&nbsp;</p>
+      <a mat-list-item href="Actividades"><img src="../../../assets/Icon/user-solid.svg"  width="50" height="50"/></a>
+      <p>&nbsp;</p>
+      <a mat-list-item href="Actividades"><img src="../../../assets/Icon/bell-regular.svg"  width="50" height="50"/></a>
+      <p>&nbsp;</p>
+      <a mat-list-item href="Actividades"><img src="../../../assets/Icon/person-falling-burst-solid.svg"  width="50" height="50"/></a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="Topnav">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Bienvenido</span>
+    </mat-toolbar>
+    <app-dashboard class="leftNav"></app-dashboard>
+  </mat-sidenav-content>
+</mat-sidenav-container>
