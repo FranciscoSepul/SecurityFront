@@ -9,6 +9,7 @@ export class AuthentificationService {
   private ingresar: boolean = false
 
   public LogIn(usuario: any, password: any): boolean {
+    
     sessionStorage.setItem('IsLogin', JSON.stringify(this.ingresar = usuario == 'admin' && password == 'admin'));
     return Boolean(sessionStorage.getItem('IsLogin'));
   }

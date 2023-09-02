@@ -8,9 +8,6 @@ import { map, shareReplay } from 'rxjs/operators';
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.css']
-
-
-
 })
 export class NavigationComponent {
   private breakpointObserver = inject(BreakpointObserver);

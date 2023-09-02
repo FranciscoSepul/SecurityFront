@@ -1,4 +1,5 @@
-
+<html>
+<div class="colorCenter">
 <mat-sidenav-container class="sidenav-container ">
   <mat-sidenav #drawer class="sidenav " fixedInViewport="true"
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
@@ -7,17 +8,29 @@
     <mat-toolbar class="TopNav"></mat-toolbar>
     <mat-nav-list class="leftNav">
       <p>&nbsp;</p>
+      <p>&nbsp;</p>
       <a mat-list-item href="Actividades"><img src="../../../assets/Icon/helmet-safety-solid.svg"  width="60" height="50"/></a>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
       <p>&nbsp;</p>
       <a mat-list-item href="Usuarios"><img src="../../../assets/Icon/users-solid.svg"  width="60" height="50"/></a>
       <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
       <a mat-list-item href="Visitas"><img src="../../../assets/Icon/business-time-solid.svg"  width="60" height="50"/></a>
+      <p>&nbsp;</p>
       <p>&nbsp;</p>
       <a mat-list-item href="Empresas"><img src="../../../assets/Icon/building-solid.svg"  width="60" height="50"/></a>
       <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
       <a mat-list-item href="Usuario"><img src="../../../assets/Icon/user-solid.svg"  width="60" height="50"/></a>
       <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
       <a mat-list-item href="Notificaciones"><img src="../../../assets/Icon/bell-regular.svg"  width="70" height="50"/></a>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
       <p>&nbsp;</p>
       <a mat-list-item href="Accidentes"><img src="../../../assets/Icon/person-falling-burst-solid.svg"  width="60" height="50"/></a>
     </mat-nav-list>
@@ -32,8 +45,10 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span class="derecha">Bienvenido</span>
+        <h1 >Bienvenido</h1>
     </mat-toolbar>
     <app-dashboard class="colorCenter"></app-dashboard>
   </mat-sidenav-content>
 </mat-sidenav-container>
+</div>
+</html>
