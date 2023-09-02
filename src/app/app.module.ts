@@ -4,6 +4,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {FormsModule} from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -27,7 +30,6 @@ import { EmpresasComponent } from './empresas/empresas.component';
 import { PlanificacionComponent } from './planificacion/planificacion.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { VisitasComponent } from './visitas/visitas.component';
-
 
 
 @NgModule({
@@ -60,7 +62,10 @@ import { VisitasComponent } from './visitas/visitas.component';
         MatButtonModule,
         MatGridListModule,
         MatCardModule,
-        MatMenuModule
+        MatMenuModule,
+        FormsModule,
+        MatFormFieldModule,
+        MatProgressSpinnerModule
     ]
 })
 export class AppModule { }

@@ -8,6 +8,8 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
 import { PlanificacionComponent} from './planificacion/planificacion.component';
 import { UsuarioComponent} from './usuario/usuario.component';
 import { VisitasComponent} from './visitas/visitas.component';
+import { LoginComponent } from './auth/login/login.component';
+import {NavigationComponent} from './navigation/navigation.component'
 
 
 export const routes: Routes = [
@@ -18,7 +20,7 @@ export const routes: Routes = [
   {path:'Usuarios', component:UsuariosComponent},
   {path:'Planificacion', component:PlanificacionComponent},
   {path:'Usuario', component:UsuarioComponent},
-  {path:'Visitas', component:VisitasComponent}
+  {path:'Visitas', component:VisitasComponent},
 
 ];
 
