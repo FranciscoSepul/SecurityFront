@@ -9,6 +9,7 @@ import { AuthentificationService } from './shared/Services/LogIn/authentificatio
 export class AppComponent {
   title = 'SecurityFront';
   isSideBarOpen = true;
+  storage: any;
   openSideBar() {
     this.isSideBarOpen = true;
   }
@@ -19,8 +20,9 @@ export class AppComponent {
 
   }
   public isLoggedIn(): boolean {
-    console.log('primer is loggedin');
     return this.login.habilitar();
   }
-
+  SetSession() {
+    sessionStorage.setItem('IsLogin', 'True');
+  }
 }
