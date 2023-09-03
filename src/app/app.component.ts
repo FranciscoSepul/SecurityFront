@@ -20,9 +20,8 @@ export class AppComponent {
 
   }
   public isLoggedIn(): boolean {
+    console.log('hr ',this.login.habilitar());
     return this.login.habilitar();
   }
-  SetSession() {
-    sessionStorage.setItem('IsLogin', 'True');
-  }
+
 }

@@ -7,7 +7,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {FormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-
+import { HttpClientModule } from "@angular/common/http";
+import { TableModule } from 'primeng/table';
+import {CardModule} from 'primeng/card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +18,6 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { LoginComponent } from './auth/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ActividadesComponent } from './actividades/actividades.component';
-import { RouterModule } from '@angular/router';
 import { NavigationComponent } from './navigation/navigation.component';
 import { MatButtonModule } from '@angular/material/button';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -28,7 +29,6 @@ import { AccidentesComponent } from './accidentes/accidentes.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { EmpresasComponent } from './empresas/empresas.component';
 import { PlanificacionComponent } from './planificacion/planificacion.component';
-import { UsuarioComponent } from './usuario/usuario.component';
 import { VisitasComponent } from './visitas/visitas.component';
 
 
@@ -46,7 +46,6 @@ import { VisitasComponent } from './visitas/visitas.component';
         UsuariosComponent,
         EmpresasComponent,
         PlanificacionComponent,
-        UsuarioComponent,
         VisitasComponent
     ],
     providers: [],
@@ -65,7 +64,10 @@ import { VisitasComponent } from './visitas/visitas.component';
         MatMenuModule,
         FormsModule,
         MatFormFieldModule,
-        MatProgressSpinnerModule
+        MatProgressSpinnerModule,
+        HttpClientModule,
+        TableModule,
+        CardModule
     ]
 })
 export class AppModule { }

@@ -17,7 +17,6 @@ export class LoginComponent {
 
   username!: string;
   password!: string;
-  isLoggedIn = false;
 
   ngOnInit() {
   }
